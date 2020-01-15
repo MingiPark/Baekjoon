@@ -1,4 +1,3 @@
-/*
 #include<stdio.h>
 
 int main(void) {
@@ -16,11 +15,11 @@ int main(void) {
 		}
 	}
 
-	int* arr; //ÃÑÇÕÀÇ °ª ¹è¿­
+	int* arr; //ì´í•©ì˜ ê°’ ë°°ì—´
 	int size = a * b * c;
 	arr = (int*)malloc(sizeof(int) * size);
 
-	int l = 0; //¸¸µé¾îÁö´Â ÀüÃ¼ ÇÕÀÇ °³¼ö
+	int l = 0; //ë§Œë“¤ì–´ì§€ëŠ” ì „ì²´ í•©ì˜ ê°œìˆ˜
 
 	for (int i = 1; i <= a; i++) {
 		for (int j = 1; j <= b; j++) {
@@ -41,10 +40,10 @@ int main(void) {
 				arr2[k]++;
 			}
 		}
-		//printf("%d ", arr2[k]); //È®ÀÎ¿ë Ãâ·Â
+		//printf("%d ", arr2[k]); //í™•ì¸ìš© ì¶œë ¥
 	}
 
-	//Áßº¹ È½¼ö°¡ °¡Àå ¸¹Àº °Í Ã£±â
+	//ì¤‘ë³µ íšŸìˆ˜ê°€ ê°€ì¥ ë§ì€ ê²ƒ ì°¾ê¸°
 	int max = arr2[0];
 	for (int m = 0; m < 80; m++) {
 		if (arr2[m] > max) {
@@ -52,7 +51,7 @@ int main(void) {
 		}
 	}
 
-	//Áßº¹ È½¼ö°¡ ¸¹Àº °Í Áß ÃÖ¼Ú°ª Ã£±â
+	//ì¤‘ë³µ íšŸìˆ˜ê°€ ë§ì€ ê²ƒ ì¤‘ ìµœì†Ÿê°’ ì°¾ê¸°
 	int min = 0;
 	for (int n = 0; n < 80; n++) {
 		if(arr2[n]==max){
@@ -65,4 +64,3 @@ int main(void) {
 	
 	return 0;
 }
-*/
