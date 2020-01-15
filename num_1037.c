@@ -1,4 +1,4 @@
-/*
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -7,13 +7,13 @@ void mergeSort(int data[], int p, int r);
 
 int main(void) {
 
-	int a = 0; //¾à¼ö °³¼ö ÀÔ·Â º¯¼ö
+	int a = 0; //ì•½ìˆ˜ ê°œìˆ˜ ìž…ë ¥ ë³€ìˆ˜
 
 	while (1) {
-		printf("¾à¼öÀÇ °³¼ö : ");
+		printf("ì•½ìˆ˜ì˜ ê°œìˆ˜ : ");
 		scanf_s("%d", &a);
 		if (a > 50 || a <= 0) {
-			printf("50º¸´Ù ÀÛ°Å³ª °°Àº ÀÚ¿¬¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.\n");
+			printf("50ë³´ë‹¤ ìž‘ê±°ë‚˜ ê°™ì€ ìžì—°ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”.\n");
 			continue;
 		}
 		break;
@@ -28,10 +28,10 @@ int main(void) {
 	for (int i = 0; i < a; i++) {
 		scanf_s("%d", &arr[i]);
 	}
-	//ÁøÂ¥ ¾à¼ö ÀÔ·Â ¹Þ±â
+	//ì§„ì§œ ì•½ìˆ˜ ìž…ë ¥ ë°›ê¸°
 
-	int max = 0; //ÁøÂ¥ ¾à¼ö Áß ÃÖ´ë°ª
-	int min = 0; //ÁøÂ¥ ¾à¼ö Áß ÃÖ¼Ò°ª
+	int max = 0; //ì§„ì§œ ì•½ìˆ˜ ì¤‘ ìµœëŒ€ê°’
+	int min = 0; //ì§„ì§œ ì•½ìˆ˜ ì¤‘ ìµœì†Œê°’
 
 	mergeSort(arr, 0, a - 1);
 
@@ -39,7 +39,7 @@ int main(void) {
 	min = arr[a-1];
 
 	int result = min * max;
-	int cnt = 0; // ÃÖ´ë ÃÖ¼ÒÀÇ °öÀÎ °ªÀÇ ÁøÂ¥ ¾à¼öÀÇ ¼ö ÆÇº°
+	int cnt = 0; // ìµœëŒ€ ìµœì†Œì˜ ê³±ì¸ ê°’ì˜ ì§„ì§œ ì•½ìˆ˜ì˜ ìˆ˜ íŒë³„
 
 	int ii = 0;
 	
@@ -64,11 +64,11 @@ int main(void) {
 	}
 	
 	if (result > 50 || result < 1 || min <= 1 || cnt != a || check != 0) {
-		printf("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù. \n");
+		printf("ìž˜ëª»ëœ ìž…ë ¥ìž…ë‹ˆë‹¤. \n");
 		return 0;
 	}
 	else {
-		printf("°á°ú °ªÀº %d ÀÔ´Ï´Ù.\n", result);
+		printf("ê²°ê³¼ ê°’ì€ %d ìž…ë‹ˆë‹¤.\n", result);
 	}
 
 	return 0;
@@ -104,4 +104,4 @@ void merge(int data[], int p, int q, int r) {
 		data[a] = tmp[a];
 	}
 }
-*/
+
