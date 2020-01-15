@@ -1,4 +1,3 @@
-/*
 #include<stdio.h>
 #include<string.h>
 #include<ctype.h>
@@ -17,14 +16,14 @@ int main(void) {
 		break;
 	}
 
-	//¸ğµÎ ´ë¹®ÀÚ·Î º¯È¯
+	//ëª¨ë‘ ëŒ€ë¬¸ìë¡œ ë³€í™˜
 	for (int i = 0; i < strlen(a); i++) {
 		if (islower(a[i])) {
 			a[i] = toupper(a[i]);
 		}
 	}
 	
-	//°°Àº ¹®ÀÚ °³¼ö Ä«¿îÆ® 
+	//ê°™ì€ ë¬¸ì ê°œìˆ˜ ì¹´ìš´íŠ¸ 
 	int count[26] = {NULL};
 	for (int k = 65; k < 91; k++) {
 		for (int kk = 0; kk < strlen(a); kk++) {
@@ -34,7 +33,7 @@ int main(void) {
 		}
 	}
 	
-	//ÃÖ´ë Áßº¹ ¼ö Ã£±â
+	//ìµœëŒ€ ì¤‘ë³µ ìˆ˜ ì°¾ê¸°
 	int max = count[0];
 	for (int m = 0; m < 26; m++) {
 		if (count[m] > max) {
@@ -57,4 +56,3 @@ int main(void) {
 
 	return 0;
 }
-*/
